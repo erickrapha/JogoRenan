@@ -1,0 +1,1021 @@
+fileFormatVersion: 2
+guid: 5f81353cd45ea6e43928373b3353b623
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 279
+        width: 38
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f26132554d3364e874064e3ad0eafa
+      internalID: -2097917853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 279
+        width: 39
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba155668bc1d564eb00ed823ef097cb
+      internalID: 895902938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 287
+        width: 49
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1dd400a7508a04aa2c61dc3e6add8a
+      internalID: 698697300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 284
+        width: 47
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb16220b25eb234418472dba743dcb2d
+      internalID: -1510959652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 280
+        width: 41
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f8d4384dff0b141876e45125f6bdc5
+      internalID: -1294856144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 280
+        width: 37
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1472e64bcc0d07b4c82d9b5a0137c2bc
+      internalID: 1721560221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_6
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 285
+        width: 48
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8e0ef66089cd24ca8f45c6d187f211
+      internalID: 1151501430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_7
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 282
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08d59620b58a09498f45ae4f3c24fc1
+      internalID: 2103831694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_8
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 279
+        width: 49
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332d1b628aceb194599be1067be5827e
+      internalID: 846290905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 279
+        width: 46
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb597e6ae0892a549a7c3f87647d87ff
+      internalID: 773552194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_10
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 287
+        width: 54
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643da76a35d64c04fb3e8f35d8b2bd54
+      internalID: -215038013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 284
+        width: 53
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e30d6d914bc91479890024119013c3
+      internalID: 2074239693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_12
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 280
+        width: 50
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99db54fcf1e2b34cb027a98e8e3a345
+      internalID: -1282809807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_13
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 280
+        width: 48
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65753f0787d86143a2ae95409c4155d
+      internalID: 1274044284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_14
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 285
+        width: 52
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc862596b84c9fd469b7bd621db12088
+      internalID: 640424119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_15
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 282
+        width: 51
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75cdf89359da664c91b5157558f897d
+      internalID: 1929662803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_16
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 181
+        width: 31
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62545ce87cad26441ab19230f4a501c7
+      internalID: -405290517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_17
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 189
+        width: 30
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d0564b782e4a041bcf75d9cd9685f3
+      internalID: 720556419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 189
+        width: 41
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7eda21279636fd4ba856aa465aaee15
+      internalID: -1826691439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_19
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 189
+        width: 43
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c4f7895f84c6f4da248884c16fcb2c
+      internalID: 400918828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_20
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 189
+        width: 43
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3261daf3ca11761458587a62938a2107
+      internalID: -1814127909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_21
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 189
+        width: 41
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3385b27887994d5468608e0158266146
+      internalID: 921141604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_22
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 189
+        width: 39
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5ea02ff7edd7c4ab6084ed0db4d79d
+      internalID: 1202166297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_23
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 189
+        width: 30
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a525f2180694f141916424fca6b4e6f
+      internalID: 261982579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_24
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 200
+        width: 33
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14aacb3487ece4b4192579175df93ad3
+      internalID: -272530315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_25
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 200
+        width: 53
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0e6416cf92d9746b4679f4616c21e2
+      internalID: -1222210520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_26
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 200
+        width: 49
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b2b9514c6fd6649ad906093bf6f6c4
+      internalID: 1697386677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_27
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 200
+        width: 36
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b97c1e334ad0c44cb76ce5c7e17bc2a
+      internalID: -412449971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_28
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 200
+        width: 37
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56dd08ffd12489d43a079cb98d5d229f
+      internalID: 1218329403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_29
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 200
+        width: 52
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b54158b10e08147a301ffa4762572b
+      internalID: 1893551310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_30
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 201
+        width: 44
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e8f0fb216aab54b839d55dcdca717f
+      internalID: -776852325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_34
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 64
+        width: 90
+        height: 83
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4884ae0fc14f84b9343d304c8a6dc6
+      internalID: -1940002778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_43
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 68
+        width: 129
+        height: 67
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301f2ad7dd9c9074cb52b1fd94ff43cb
+      internalID: 81011583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_44
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 60
+        width: 82
+        height: 94
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e685c70c5bea841a1202c01b2150f8
+      internalID: 583592494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_48
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 70
+        width: 108
+        height: 61
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed10c488a03cddb448cad06fb42b4682
+      internalID: 528496947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_49
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 73
+        width: 120
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82df7ff83969a10489fb739270d98d45
+      internalID: -625568868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_50
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 70
+        width: 125
+        height: 61
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd8218fd57441e4984046cc014c1f2a
+      internalID: -1199096646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fames_GarotaRuiva_58
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 47
+        width: 87
+        height: 107
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ccad82ad2922a4fbd44e9b7a091928
+      internalID: 1400472276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fames_GarotaRuiva_70: -583100920
+      Fames_GarotaRuiva_47: 1148296927
+      Fames_GarotaRuiva_51: -716059998
+      Fames_GarotaRuiva_71: 198410967
+      Fames_GarotaRuiva_11: 2074239693
+      Fames_GarotaRuiva_30: -776852325
+      Fames_GarotaRuiva_20: -1814127909
+      Fames_GarotaRuiva_21: 921141604
+      Fames_GarotaRuiva_34: -1940002778
+      Fames_GarotaRuiva_5: 1721560221
+      Fames_GarotaRuiva_35: -954107088
+      Fames_GarotaRuiva_26: 1697386677
+      Fames_GarotaRuiva_36: -500836811
+      Fames_GarotaRuiva_17: 720556419
+      Fames_GarotaRuiva_4: -1294856144
+      Fames_GarotaRuiva_8: 846290905
+      Fames_GarotaRuiva_37: -172803549
+      Fames_GarotaRuiva_53: -2010320070
+      Fames_GarotaRuiva_45: 837822538
+      Fames_GarotaRuiva_46: -991123348
+      Fames_GarotaRuiva_23: 261982579
+      Fames_GarotaRuiva_9: 773552194
+      Fames_GarotaRuiva_33: -1619696252
+      Fames_GarotaRuiva_61: 558637805
+      Fames_GarotaRuiva_16: -405290517
+      Fames_GarotaRuiva_56: -2065180988
+      Fames_GarotaRuiva_12: -1282809807
+      Fames_GarotaRuiva_48: 528496947
+      Fames_GarotaRuiva_54: -424677619
+      Fames_GarotaRuiva_55: -421105757
+      Fames_GarotaRuiva_65: 988545728
+      Fames_GarotaRuiva_62: -782993664
+      Fames_GarotaRuiva_60: -615823664
+      Fames_GarotaRuiva_73: 1916936558
+      Fames_GarotaRuiva_57: -1268907066
+      Fames_GarotaRuiva_75: -2013251748
+      Fames_GarotaRuiva_28: 1218329403
+      Fames_GarotaRuiva_25: -1222210520
+      Fames_GarotaRuiva_0: -2097917853
+      Fames_GarotaRuiva_22: 1202166297
+      Fames_GarotaRuiva_2: 698697300
+      Fames_GarotaRuiva_10: -215038013
+      Fames_GarotaRuiva_14: 640424119
+      Fames_GarotaRuiva_67: -1505749397
+      Fames_GarotaRuiva_49: -625568868
+      Fames_GarotaRuiva_59: 1955268135
+      Fames_GarotaRuiva_58: 1400472276
+      Fames_GarotaRuiva_76: 1221530561
+      Fames_GarotaRuiva_3: -1510959652
+      Fames_GarotaRuiva_19: 400918828
+      Fames_GarotaRuiva_69: -1464608874
+      Fames_GarotaRuiva_50: -1199096646
+      Fames_GarotaRuiva_68: 2038778588
+      Fames_GarotaRuiva_74: -862357738
+      Fames_GarotaRuiva_18: -1826691439
+      Fames_GarotaRuiva_27: -412449971
+      Fames_GarotaRuiva_15: 1929662803
+      Fames_GarotaRuiva_39: 67696505
+      Fames_GarotaRuiva_41: 1286645650
+      Fames_GarotaRuiva_29: 1893551310
+      Fames_GarotaRuiva_40: 488200796
+      Fames_GarotaRuiva_38: -1476211233
+      Fames_GarotaRuiva_13: 1274044284
+      Fames_GarotaRuiva_31: 813224621
+      Fames_GarotaRuiva_42: 1641937473
+      Fames_GarotaRuiva_64: -458724630
+      Fames_GarotaRuiva_66: -1299966862
+      Fames_GarotaRuiva_1: 895902938
+      Fames_GarotaRuiva_24: -272530315
+      Fames_GarotaRuiva_63: 1377842968
+      Fames_GarotaRuiva_44: 583592494
+      Fames_GarotaRuiva_32: 2132362052
+      Fames_GarotaRuiva_52: -1302722443
+      Fames_GarotaRuiva_43: 81011583
+      Fames_GarotaRuiva_6: 1151501430
+      Fames_GarotaRuiva_7: 2103831694
+      Fames_GarotaRuiva_72: -1556661307
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
