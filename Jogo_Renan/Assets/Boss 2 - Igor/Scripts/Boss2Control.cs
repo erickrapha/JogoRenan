@@ -4,14 +4,26 @@ using UnityEngine;
 
 public class Boss2Control : MonoBehaviour
 {
-    public float speed;
+    [Header("Atributos")]
     public float distance;
+    public float speed;
+    public int health;
+    
+    [Header("Booleanos")]
     public bool isRight;
+    
+    [Header("Componentes")]
     public Transform groundCheck;
+    public Animator anim;
     
 
     
     void Update()
+    {
+        MoveBoss();
+    }
+
+    private void MoveBoss()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
         RaycastHit2D ground = Physics2D.Raycast(groundCheck.position, Vector2.down, distance);
@@ -29,6 +41,15 @@ public class Boss2Control : MonoBehaviour
                 isRight = true;
             }
         }
+    }
 
+    private void AttackBoss()
+    {
+        
+    }
+
+    private void Regenerate()
+    {
+        
     }
 }
