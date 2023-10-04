@@ -6,20 +6,23 @@ public class Player : MonoBehaviour
 {
     public float speed;
     public float Jumpforce;
+    public Animator anim;
+    public bool isJumping;
     private Rigidbody2D rig;
-    private Animator anim;
+    private bool doubleJump;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
+        Jump();
     }
     void Move()
     {
@@ -35,12 +38,47 @@ public class Player : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
+
+        if(rig.velocity.x != 0)
+        {
+            anim.SetInteger("transicao", 1);
+        }
+        else if (rig.velocity == Vector2.zero)
+        {
+            anim.SetInteger("transicao", 0);
+        }
+
+
     }
     void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (!isJumping)
         {
-            rig.AddForce(new Vector2(0, Jumpforce), ForceMode2D.Impulse);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                doubleJump = true;
+                rig.AddForce(new Vector2(0, Jumpforce), ForceMode2D.Impulse);
+                anim.SetInteger("transicao", 2);
+            }
+            else
+            {
+                if (doubleJump)
+                {
+                    rig.AddForce(new Vector2(0, Jumpforce * 2), ForceMode2D.Impulse);
+                    doubleJump = false;
+                }
+            }
+
+        }
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 3)
+        {
+            isJumping = false;
         }
     }
+
 }
