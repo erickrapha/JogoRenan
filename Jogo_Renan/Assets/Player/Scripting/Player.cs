@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameObject tiro;
     public float speed;
     public float Jumpforce;
     public Animator anim;
