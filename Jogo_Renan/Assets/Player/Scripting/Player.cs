@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public float Jumpforce;
     public Animator anim;
     public bool isJumping;
+    public GameObject bow;
+    public Transform firePoint;
     private Rigidbody2D rig;
     private bool doubleJump;
     private bool isFire;
@@ -91,6 +93,7 @@ public class Player : MonoBehaviour
         {
             isFire = true;
             anim.SetInteger("transicao", 3);
+            Instantiate(bow, firePoint.position, firePoint.rotation);
             yield return new WaitForSeconds(0.25f);
             anim.SetInteger("transicao", 0);
         }
