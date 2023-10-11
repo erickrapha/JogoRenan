@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private bool doubleJump;
     private bool isFire;
+    private float movement;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class Player : MonoBehaviour
     }
     void Move()
     {
-        float movement = Input.GetAxis("Horizontal");
+        movement = Input.GetAxis("Horizontal");
         //Debug.Log(movement);
         rig.velocity = new Vector2(movement * speed, rig.velocity.y);
 
@@ -93,7 +94,18 @@ public class Player : MonoBehaviour
         {
             isFire = true;
             anim.SetInteger("transicao", 3);
-            Instantiate(bow, firePoint.position, firePoint.rotation);
+            GameObject Bow = Instantiate(bow, firePoint.position, firePoint.rotation);
+
+            if (transform.rotation.y == 0)
+            {
+                //Bow.transform.eulerAngles = new Vector3(0, 0, 0);
+                Bow.GetComponent<Bow>().isRight = true;
+            }
+            if (transform.rotation.y == 180)
+            {
+                //Bow.transform.eulerAngles = new Vector3(0, 180, 0);
+                Bow.GetComponent<Bow>().isRight = false;
+            }
             yield return new WaitForSeconds(0.25f);
             anim.SetInteger("transicao", 0);
         }
