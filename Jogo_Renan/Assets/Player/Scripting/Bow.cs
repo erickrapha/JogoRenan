@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Bow : MonoBehaviour
 {
-
-    private Rigidbody2D rig;
     public float speed;
+    public int damage;
     public bool isRight;
+    private Rigidbody2D rig;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         Destroy(gameObject, 2f);
+        //Instantiate(gameObject, 1f);
     }
 
     // Update is called once per frame
@@ -26,6 +27,16 @@ public class Bow : MonoBehaviour
         else
         {
             rig.velocity = Vector2.left * speed;
+        }
+        
+
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.GetComponent<Square2>().Damage(damage);
+            Destroy(gameObject);
         }
     }
 

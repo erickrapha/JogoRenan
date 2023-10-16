@@ -272,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiro: {fileID: 0}
   speed: 7
-  Jumpforce: 5
+  Jumpforce: 4.7
   anim: {fileID: 0}
   isJumping: 0
   bow: {fileID: 5330623151700086917, guid: 19350be006270694dbcc6f2afb601910, type: 3}
@@ -516,12 +516,12 @@ GameObject:
   - component: {fileID: 1957211336}
   - component: {fileID: 1957211335}
   m_Layer: 0
-  m_Name: Square (1)
-  m_TagString: Untagged
+  m_Name: Square2
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1957211335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -629,7 +629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957211334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.01, y: -3.177, z: 0}
+  m_LocalPosition: {x: 6.6, y: -3.16, z: 0}
   m_LocalScale: {x: 1, y: 2.606, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
