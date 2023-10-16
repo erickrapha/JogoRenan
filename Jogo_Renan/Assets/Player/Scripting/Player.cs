@@ -11,15 +11,18 @@ public class Player : MonoBehaviour
     public bool isJumping;
     public GameObject bow;
     public Transform firePoint;
+    public float cooldown = 1.0f;
     private Rigidbody2D rig;
     private bool doubleJump;
     private bool isFire;
+    private float current;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+        current = cooldown;
     }
 
     // Update is called once per frame

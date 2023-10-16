@@ -35,9 +35,10 @@ public class Bow : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.GetComponent<Square2>().Damage(damage);
-            Destroy(gameObject);
+            //collision.GetComponent<>().Damage(damage);
+            
         }
+        Destroy(gameObject);
     }
 
 }
