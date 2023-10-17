@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int heath;
     public GameObject tiro;
     public float speed;
     public float Jumpforce;
@@ -112,6 +113,16 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(0.25f);
             isFire = false;
             anim.SetInteger("transicao", 0);
+        }
+    }
+    public void Damage(int dmg)
+    {
+        heath -= dmg;
+
+        if (heath <= 0)
+        {
+            //Chamar o game over
+
         }
     }
 
