@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int heath;
-    public GameObject tiro;
+    public int heath = 3;
     public float speed;
     public float Jumpforce;
     public Animator anim;
@@ -24,6 +23,8 @@ public class Player : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         current = cooldown;
+
+        GameController.instance.UpdateLives(heath);
     }
 
     // Update is called once per frame
@@ -118,6 +119,7 @@ public class Player : MonoBehaviour
     public void Damage(int dmg)
     {
         heath -= dmg;
+        GameController.instance.UpdateLives(heath);
 
         if (heath <= 0)
         {
