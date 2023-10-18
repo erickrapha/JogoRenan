@@ -164,12 +164,10 @@ public class Player : MonoBehaviour
 
             if (transform.rotation.y == 0)
             {
-                //Bow.transform.eulerAngles = new Vector3(0, 0, 0);
                 Bow.GetComponent<Bow>().isRight = true;
             }
             if (transform.rotation.y == 180)
             {
-                //Bow.transform.eulerAngles = new Vector3(0, 180, 0);
                 Bow.GetComponent<Bow>().isRight = false;
             }
 
@@ -182,6 +180,18 @@ public class Player : MonoBehaviour
     {
         heath -= dmg;
         GameController.instance.UpdateLives(heath);
+        anim.SetTrigger("hit");
+        
+        if (transform.rotation.y == 0)
+        {
+            //rig.AddForce(Vector2.left * 5, ForceMode2D.Impulse);
+            transform.position += new Vector3(-0.5f, 0, 0);
+        }
+        if (transform.rotation.y == 180)
+        {
+            //rig.AddForce(Vector2.right * 5, ForceMode2D.Impulse);
+            transform.position += new Vector3(0.5f, 0, 0);
+        }
 
         if (heath <= 0)
         {
