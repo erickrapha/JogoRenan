@@ -425,7 +425,7 @@ MonoBehaviour:
   isJumping: 1
   bow: {fileID: 5330623151700086917, guid: 19350be006270694dbcc6f2afb601910, type: 3}
   firePoint: {fileID: 247070383}
-  cooldown: 0.75
+  cooldown: 0.7
   fireReady: 1
   current: 0
 --- !u!1 &236333791
@@ -1121,7 +1121,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -272530315, guid: 5f81353cd45ea6e43928373b3353b623, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

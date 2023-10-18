@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public bool isJumping;
     public GameObject bow;
     public Transform firePoint;
-    public float cooldown = 0.75f;
+    public float cooldown = 0.7f;
     public bool fireReady = true;
     public float current;
     private Rigidbody2D rig;
