@@ -11,20 +11,22 @@ public class Player : MonoBehaviour
     public bool isJumping;
     public GameObject bow;
     public Transform firePoint;
-    public float cooldown = 1.0f;
+    public float cooldown = 0.75f;
+    public bool fireReady = true;
+    public float current;
     private Rigidbody2D rig;
     private bool doubleJump;
     private bool isFire;
-    private float current;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        current = cooldown;
 
         GameController.instance.UpdateLives(heath);
+        current = cooldown;
+        fireReady = true;
     }
 
     // Update is called once per frame
@@ -32,7 +34,8 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
-        BowFire();
+        // BowFire();
+        FireNotIenumerator();
     }
     void Move()
     {
@@ -92,10 +95,61 @@ public class Player : MonoBehaviour
         StartCoroutine("Fire");
     }
 
+    void FireNotIenumerator()
+    {
+        if (!fireReady)
+        {
+            current -= Time.deltaTime;
+
+            if (current < 0)
+            {
+                current = cooldown;
+                fireReady = true;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && fireReady)
+        {
+            fireReady = false;
+            isFire = true;
+            anim.SetInteger("transicao", 3);
+            GameObject Bow = Instantiate(bow, firePoint.position, firePoint.rotation);
+
+            if (transform.rotation.y == 0)
+            {
+                Bow.GetComponent<Bow>().isRight = true;
+            }
+            if (transform.rotation.y == 180)
+            {
+                Bow.GetComponent<Bow>().isRight = false;
+            }
+
+            Invoke("BackToTransicao", 0.25f);
+            
+        }
+    }
+    void BackToTransicao()
+    {
+        isFire = false;
+        anim.SetInteger("transicao", 0);
+    }
     IEnumerator Fire()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (!fireReady)
         {
+            current -= Time.deltaTime;
+
+            if (current < 0)
+            {
+                current = cooldown;
+                fireReady = true;
+            }
+        }
+        
+
+        if (Input.GetKeyDown(KeyCode.E) && fireReady)
+        {
+            fireReady = false;
             isFire = true;
             anim.SetInteger("transicao", 3);
             GameObject Bow = Instantiate(bow, firePoint.position, firePoint.rotation);

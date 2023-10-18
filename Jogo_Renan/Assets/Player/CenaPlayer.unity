@@ -304,7 +304,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5, y: 0.465}
+  m_Offset: {x: 0, y: 0.465}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -425,7 +425,9 @@ MonoBehaviour:
   isJumping: 0
   bow: {fileID: 5330623151700086917, guid: 19350be006270694dbcc6f2afb601910, type: 3}
   firePoint: {fileID: 247070383}
-  cooldown: 1.5
+  cooldown: 0.75
+  fireReady: 1
+  current: 0
 --- !u!1 &236333791
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131218538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.71, y: -0.483, z: 0}
+  m_LocalPosition: {x: 0, y: -0.483, z: 0}
   m_LocalScale: {x: 2.1932, y: 2.1932, z: 2.1932}
   m_ConstrainProportionsScale: 0
   m_Children:
