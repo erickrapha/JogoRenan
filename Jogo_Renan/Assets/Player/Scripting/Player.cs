@@ -131,7 +131,15 @@ public class Player : MonoBehaviour
     void BackToTransicao()
     {
         isFire = false;
-        anim.SetInteger("transicao", 0);
+        if (isJumping)
+        {
+            anim.SetInteger("transicao", 2);
+        }
+        else
+        {
+             anim.SetInteger("transicao", 0);
+        }
+       
     }
     IEnumerator Fire()
     {
