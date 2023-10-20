@@ -17,12 +17,14 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private bool doubleJump;
     private bool isFire;
+    private AudioSource sound;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+        sound = GetComponentInChildren<AudioSource>();
 
         GameController.instance.UpdateLives(heath);
         current = cooldown;
@@ -184,12 +186,10 @@ public class Player : MonoBehaviour
         
         if (transform.rotation.y == 0)
         {
-            //rig.AddForce(Vector2.left * 5, ForceMode2D.Impulse);
             transform.position += new Vector3(-0.5f, 0, 0);
         }
         if (transform.rotation.y == 180)
         {
-            //rig.AddForce(Vector2.right * 5, ForceMode2D.Impulse);
             transform.position += new Vector3(0.5f, 0, 0);
         }
 
@@ -205,6 +205,8 @@ public class Player : MonoBehaviour
         if (collision.gameObject.layer == 3)
         {
             isJumping = false;
+            sound.Play();
+            anim.Play("Hit_Player");
         }
     }
 
