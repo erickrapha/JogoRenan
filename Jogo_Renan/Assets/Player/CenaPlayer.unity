@@ -420,10 +420,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heath: 3
-  speed: 5
-  Jumpforce: 4.9
+  speed: 5.5
+  Jumpforce: 4.5
   anim: {fileID: 0}
-  isJumping: 1
+  isJumping: 0
   bow: {fileID: 5330623151700086917, guid: 19350be006270694dbcc6f2afb601910, type: 3}
   firePoint: {fileID: 247070383}
   cooldown: 0.7
@@ -440,7 +440,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6b51866035ec86340abff12be2ee5d38, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.496
   m_Pitch: 1
   Loop: 0

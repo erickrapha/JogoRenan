@@ -51,7 +51,7 @@ public class Bow : MonoBehaviour
             animator.Play("Destroy_Bow");
             hit = true;
             //Aplicar dano no Enemy
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, 0.75f);
         }
 
     }

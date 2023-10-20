@@ -183,7 +183,9 @@ public class Player : MonoBehaviour
         heath -= dmg;
         GameController.instance.UpdateLives(heath);
         anim.SetTrigger("hit");
-        
+        sound.Play();
+        anim.Play("Hit_Player");
+
         if (transform.rotation.y == 0)
         {
             transform.position += new Vector3(-0.5f, 0, 0);
@@ -205,8 +207,6 @@ public class Player : MonoBehaviour
         if (collision.gameObject.layer == 3)
         {
             isJumping = false;
-            sound.Play();
-            anim.Play("Hit_Player");
         }
     }
 
