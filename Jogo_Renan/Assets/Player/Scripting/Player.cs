@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     private bool doubleJump;
     private bool isFire;
     private AudioSource sound;
+    public string[] enemyTags;
 
     // Start is called before the first frame update
     void Start()
@@ -34,11 +36,28 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            FindObjectOfType<GameMeneger>().CarregarProximaFase();
+        }
+
         Move();
         Jump();
         // BowFire();
         FireNotIenumerator();
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        foreach(var tag in enemyTags)
+        {
+            if (collision.tag == tag)
+            {
+                Damage(1);
+            }
+        }
+    }
+
+
     void Move()
     {
         float movement = Input.GetAxis("Horizontal");
@@ -198,6 +217,7 @@ public class Player : MonoBehaviour
         if (heath <= 0)
         {
             //Chamar o game over
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
         }
     }

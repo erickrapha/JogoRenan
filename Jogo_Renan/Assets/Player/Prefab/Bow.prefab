@@ -161,6 +161,9 @@ MonoBehaviour:
   speed: 7
   damage: 1
   isRight: 0
+  enemyTags:
+  - Enemy
+  - Finish
 --- !u!82 &4424049231348081326
 AudioSource:
   m_ObjectHideFlags: 0

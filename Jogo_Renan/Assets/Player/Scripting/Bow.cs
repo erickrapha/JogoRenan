@@ -11,6 +11,7 @@ public class Bow : MonoBehaviour
     private Animator animator;
     private bool hit;
     private AudioSource sound;
+    public string[] enemyTags;
 
     // Start is called before the first frame update
     void Start()
@@ -43,15 +44,18 @@ public class Bow : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        foreach (var tag in enemyTags)
         {
-            //collision.GetComponent<>().Damage(damage);
-            sound.Play();
-            //Trocar animação de destruir
-            animator.Play("Destroy_Bow");
-            hit = true;
-            //Aplicar dano no Enemy
-            Destroy(gameObject, 0.75f);
+            if (collision.gameObject.tag == tag)
+            {
+                //collision.GetComponent<>().Damage(damage);
+                sound.Play();
+                //Trocar animação de destruir
+                animator.Play("Destroy_Bow");
+                hit = true;
+                //Aplicar dano no Enemy
+                Destroy(gameObject, 0.75f);
+            }
         }
 
     }
