@@ -1,0 +1,1926 @@
+fileFormatVersion: 2
+guid: a49ce2e8340076e4cbddf9a0bdc1de50
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 455
+        width: 113
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0effbd8bf69674589c302a5c4e95ee
+      internalID: 1878899395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 455
+        width: 113
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2659c57452852f3499f52ed743f7574f
+      internalID: 708390902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_2
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 455
+        width: 113
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253b56ef7317aed49b03dc10673d33b1
+      internalID: -403890890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 455
+        width: 113
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1581c169bd1b6d14d99fe3408535c1f9
+      internalID: -981372625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 455
+        width: 113
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f863b400978044ba97586ef8480f54
+      internalID: 1572534995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_5
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 455
+        width: 113
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb874476bcc7d04db81e7f28bd4721d
+      internalID: 1289113180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_6
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 455
+        width: 113
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd57dc1cd7932441acc68c702a18566
+      internalID: -1131987210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 355
+        width: 113
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188684460ca0ed040a5f731e1dcf3a52
+      internalID: -500408348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_8
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 355
+        width: 115
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f72351774281e4e9623bf2005c7ae7
+      internalID: 827622047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_9
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 355
+        width: 116
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bc6980dc1111145a9bf24fad644f94
+      internalID: -903055777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_10
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 355
+        width: 120
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28422e4437de5534897c36ea80b578c0
+      internalID: 1380571361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_11
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 355
+        width: 127
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d6a923f7bdcae488aebcdfe00a8612
+      internalID: 1357206203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_12
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 355
+        width: 127
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307fc1d3d7644a94a9471d9ee8ed1a2a
+      internalID: -1897105562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_13
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 355
+        width: 120
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94983389f93d60745a761eb65dd67d05
+      internalID: 66793486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_14
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 355
+        width: 117
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878e408c05e6ed547a28e15d821f229b
+      internalID: 6659435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_15
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 355
+        width: 118
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1763325c48c1d0f459e42c1add61ae9e
+      internalID: -1864947603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_16
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 355
+        width: 119
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436828c0109c1c1458231f9d6c768315
+      internalID: -727878446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_17
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 232
+        width: 113
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09c8b53802088047b5488b22bf3800e
+      internalID: 41920933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 232
+        width: 113
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3711db0ae3f3afd47bccf2ef219343f0
+      internalID: 2019222760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_19
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 230
+        width: 115
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689e29931c363da4a90da3e10c15cd67
+      internalID: 1147837253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_20
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 228
+        width: 112
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2c61a1befd55847a479e4dd4697b56
+      internalID: -559466480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_21
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 227
+        width: 113
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5685d0908cf8afd4e8de76e33a5d6d0c
+      internalID: 1568824508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_22
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 227
+        width: 114
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c8e81444fce6343b363b4741528b23
+      internalID: 864686111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_23
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 227
+        width: 114
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e636213c120028b45986974246e30aca
+      internalID: 1552449442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_24
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 227
+        width: 113
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f578ae7614da64e84046b34ac02ce4
+      internalID: 1057217701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_25
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 228
+        width: 111
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178f2fe4fc10570448d993eaa81c46de
+      internalID: -1865337092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_26
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 228
+        width: 111
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e3790f16e32ad4981c8ac774c1c171
+      internalID: -91173575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_27
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 232
+        width: 107
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f527e132645124c8f61a82915adf6d
+      internalID: 774225011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_28
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 232
+        width: 111
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ecff6af07c8854d8e35d1460d78207
+      internalID: 1852807754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_29
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 111
+        width: 106
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33e35c0cca76654c8d5f6788d7cbaf1
+      internalID: 608114510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_30
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 186
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf8aaa3ea25015459f59ec7456d4d8c
+      internalID: -431415572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_31
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 183
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e07d7ea65686414b96530c07f14a25a
+      internalID: -372133830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_32
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 183
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f3fb85105310f46ad3f5ffb462684c
+      internalID: -431246096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_33
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 186
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c460b5c9a98044aac92eebf3704e56
+      internalID: -2114914279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_34
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 186
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9750de3a12853644b89c6ebf23b383bb
+      internalID: -1232138879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_35
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 186
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede3b8b6f481f7f4e8f038579d24689f
+      internalID: -1253236634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_36
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 183
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a3a3cf2a3f73141a588f673998a38b
+      internalID: 922988176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_37
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 186
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8563a454170094abda48d00d7cafe3
+      internalID: 2120508160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_38
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 186
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9df4013926f3747a3d20e071a21722
+      internalID: -795702403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_39
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 183
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feff33e7877f5a549988b385d018ebb4
+      internalID: -1634321597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_40
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 186
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec8395f9346e854592eace56c480598
+      internalID: 206224743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_41
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 186
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc825658c91b76b40a7d28d9c6239c6c
+      internalID: -577149317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_42
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 186
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3c5ec9b6044cc408f5582f8f1ff9c3
+      internalID: -1206536864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_43
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 170
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0fab9d1ba94244f82b3931e9829de9
+      internalID: -412563386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_44
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 170
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7808f61458c2b5547a45abc74d6ee5b3
+      internalID: 806427449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_45
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 170
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b561f65a1eb3e468832ae390bb8275
+      internalID: 121289240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_46
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 170
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8375b5d4f0341264ea90797594aaf25f
+      internalID: 570191304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_47
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 170
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6e5eb52bbbf104588348c46d05f817
+      internalID: 1570267956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_48
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 167
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f0801b1b7093a44ae3d781409bdd23
+      internalID: -1693939437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_49
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 167
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774d45a5d9ac5a64598709b2542ca72a
+      internalID: 1867173322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_50
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 170
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698c01c93e2dc874089b3592e703c381
+      internalID: -1763412869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_51
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 170
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c19377e7d3e2be448a3101445fd4846
+      internalID: 123335344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_52
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 170
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ef7b349aaf08b48a723ece5f3dd4e6
+      internalID: 873460937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_53
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 170
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba9368bf02fd934fb14949d7a47d27d
+      internalID: 333170693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_54
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 170
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344392529e74d644a8c2a18512f1680c
+      internalID: 324733229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_55
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 154
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399d36bd1cea1a548b7172dd4dc0746a
+      internalID: 2070743962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_56
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 154
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27c637e00214e849bd51009bb95c2f4
+      internalID: -1547400023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_57
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 151
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d981cd6ab41bf4cb4832d79fed886c
+      internalID: 1582538675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_58
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 154
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be6597eb6772e64e94f61e64b1245e1
+      internalID: -647604637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_59
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 154
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aacc670e6ac8e448a3b1501ad79c41f
+      internalID: -29313132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_60
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 154
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af57cacb6c0c83746bdc4f17262bdac7
+      internalID: 1300751176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_61
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 154
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ffb62cbb55f1449858b218233b454d
+      internalID: 1847383511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_62
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 154
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7629fc139cc413144a3bf7b9e1ef7ae9
+      internalID: 1002388104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_63
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 15
+        width: 113
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257b4f9141ff6404eab88425b22f1472
+      internalID: -61647165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_64
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 15
+        width: 97
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326003682c97aca48943371ab02d0535
+      internalID: -1283123826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_65
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 15
+        width: 98
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b4f2c536177034a85e5d6e15de61df
+      internalID: 221921580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_66
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 15
+        width: 102
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd1b33d674cb684191589513139fac0
+      internalID: -1246343682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_67
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 11
+        width: 119
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a89ac5cd766c4458b16686a2853712
+      internalID: 964399672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_68
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 11
+        width: 126
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ba3c8c45d2a4446af2b1c2381569a6
+      internalID: 1932557677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_69
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 11
+        width: 134
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655f9f0c8b7e6c3498fadbb67d2363b7
+      internalID: 2032623788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_70
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 11
+        width: 141
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295f59a29a316b843afd025d1b67e70c
+      internalID: -1682154939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_71
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 14
+        width: 126
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b04f876fc266a47af452ddae4e0763
+      internalID: 1736437374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_72
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 35
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd55fb2138f8db469f1cd9dd89c45de
+      internalID: -218986788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_73
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 17
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db498b8dd200c7048aceb7aa78ee54a9
+      internalID: -671717093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_74
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 24
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37722a86d316b641a00e7baebd86067
+      internalID: -57344764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_75
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 31
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71a4795ca5184b44b6cea65241552ae
+      internalID: 1642562169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_76
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 23
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394d205c4d3c7fd4389a59eb0a9c8108
+      internalID: 1199308628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_77
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 20
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5268e06d866294e97dd0779e26986c
+      internalID: 551478206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_78
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 14
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943c47aeaaee8504880b72677d1e41e1
+      internalID: -904414200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_79
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 19
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9285394868bb7a48bf0a88d6cd5fb88
+      internalID: 1430533789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_80
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 19
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fb789530f7b5e49a7523ff01beb28f
+      internalID: 538050317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Poisoned Stone Bug_81
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 17
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8293d69ff4459924181d59062b35baf8
+      internalID: 1060382048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - MapleStory - Poisoned Stone Bug_32: -431246096
+      PC Computer - MapleStory - Poisoned Stone Bug_51: 123335344
+      PC Computer - MapleStory - Poisoned Stone Bug_16: -727878446
+      PC Computer - MapleStory - Poisoned Stone Bug_44: 806427449
+      PC Computer - MapleStory - Poisoned Stone Bug_17: 41920933
+      PC Computer - MapleStory - Poisoned Stone Bug_60: 1300751176
+      PC Computer - MapleStory - Poisoned Stone Bug_56: -1547400023
+      PC Computer - MapleStory - Poisoned Stone Bug_75: 1642562169
+      PC Computer - MapleStory - Poisoned Stone Bug_77: 551478206
+      PC Computer - MapleStory - Poisoned Stone Bug_62: 1002388104
+      PC Computer - MapleStory - Poisoned Stone Bug_18: 2019222760
+      PC Computer - MapleStory - Poisoned Stone Bug_55: 2070743962
+      PC Computer - MapleStory - Poisoned Stone Bug_7: -500408348
+      PC Computer - MapleStory - Poisoned Stone Bug_48: -1693939437
+      PC Computer - MapleStory - Poisoned Stone Bug_21: 1568824508
+      PC Computer - MapleStory - Poisoned Stone Bug_3: -981372625
+      PC Computer - MapleStory - Poisoned Stone Bug_38: -795702403
+      PC Computer - MapleStory - Poisoned Stone Bug_57: 1582538675
+      PC Computer - MapleStory - Poisoned Stone Bug_64: -1283123826
+      PC Computer - MapleStory - Poisoned Stone Bug_8: 827622047
+      PC Computer - MapleStory - Poisoned Stone Bug_42: -1206536864
+      PC Computer - MapleStory - Poisoned Stone Bug_53: 333170693
+      PC Computer - MapleStory - Poisoned Stone Bug_4: 1572534995
+      PC Computer - MapleStory - Poisoned Stone Bug_19: 1147837253
+      PC Computer - MapleStory - Poisoned Stone Bug_20: -559466480
+      PC Computer - MapleStory - Poisoned Stone Bug_63: -61647165
+      PC Computer - MapleStory - Poisoned Stone Bug_41: -577149317
+      PC Computer - MapleStory - Poisoned Stone Bug_1: 708390902
+      PC Computer - MapleStory - Poisoned Stone Bug_10: 1380571361
+      PC Computer - MapleStory - Poisoned Stone Bug_54: 324733229
+      PC Computer - MapleStory - Poisoned Stone Bug_58: -647604637
+      PC Computer - MapleStory - Poisoned Stone Bug_40: 206224743
+      PC Computer - MapleStory - Poisoned Stone Bug_73: -671717093
+      PC Computer - MapleStory - Poisoned Stone Bug_26: -91173575
+      PC Computer - MapleStory - Poisoned Stone Bug_14: 6659435
+      PC Computer - MapleStory - Poisoned Stone Bug_66: -1246343682
+      PC Computer - MapleStory - Poisoned Stone Bug_78: -904414200
+      PC Computer - MapleStory - Poisoned Stone Bug_46: 570191304
+      PC Computer - MapleStory - Poisoned Stone Bug_6: -1131987210
+      PC Computer - MapleStory - Poisoned Stone Bug_9: -903055777
+      PC Computer - MapleStory - Poisoned Stone Bug_37: 2120508160
+      PC Computer - MapleStory - Poisoned Stone Bug_47: 1570267956
+      PC Computer - MapleStory - Poisoned Stone Bug_67: 964399672
+      PC Computer - MapleStory - Poisoned Stone Bug_49: 1867173322
+      PC Computer - MapleStory - Poisoned Stone Bug_2: -403890890
+      PC Computer - MapleStory - Poisoned Stone Bug_68: 1932557677
+      PC Computer - MapleStory - Poisoned Stone Bug_74: -57344764
+      PC Computer - MapleStory - Poisoned Stone Bug_80: 538050317
+      PC Computer - MapleStory - Poisoned Stone Bug_36: 922988176
+      PC Computer - MapleStory - Poisoned Stone Bug_39: -1634321597
+      PC Computer - MapleStory - Poisoned Stone Bug_43: -412563386
+      PC Computer - MapleStory - Poisoned Stone Bug_70: -1682154939
+      PC Computer - MapleStory - Poisoned Stone Bug_76: 1199308628
+      PC Computer - MapleStory - Poisoned Stone Bug_71: 1736437374
+      PC Computer - MapleStory - Poisoned Stone Bug_24: 1057217701
+      PC Computer - MapleStory - Poisoned Stone Bug_33: -2114914279
+      PC Computer - MapleStory - Poisoned Stone Bug_22: 864686111
+      PC Computer - MapleStory - Poisoned Stone Bug_25: -1865337092
+      PC Computer - MapleStory - Poisoned Stone Bug_31: -372133830
+      PC Computer - MapleStory - Poisoned Stone Bug_50: -1763412869
+      PC Computer - MapleStory - Poisoned Stone Bug_61: 1847383511
+      PC Computer - MapleStory - Poisoned Stone Bug_52: 873460937
+      PC Computer - MapleStory - Poisoned Stone Bug_34: -1232138879
+      PC Computer - MapleStory - Poisoned Stone Bug_11: 1357206203
+      PC Computer - MapleStory - Poisoned Stone Bug_12: -1897105562
+      PC Computer - MapleStory - Poisoned Stone Bug_65: 221921580
+      PC Computer - MapleStory - Poisoned Stone Bug_81: 1060382048
+      PC Computer - MapleStory - Poisoned Stone Bug_0: 1878899395
+      PC Computer - MapleStory - Poisoned Stone Bug_79: 1430533789
+      PC Computer - MapleStory - Poisoned Stone Bug_29: 608114510
+      PC Computer - MapleStory - Poisoned Stone Bug_27: 774225011
+      PC Computer - MapleStory - Poisoned Stone Bug_35: -1253236634
+      PC Computer - MapleStory - Poisoned Stone Bug_72: -218986788
+      PC Computer - MapleStory - Poisoned Stone Bug_13: 66793486
+      PC Computer - MapleStory - Poisoned Stone Bug_15: -1864947603
+      PC Computer - MapleStory - Poisoned Stone Bug_69: 2032623788
+      PC Computer - MapleStory - Poisoned Stone Bug_30: -431415572
+      PC Computer - MapleStory - Poisoned Stone Bug_59: -29313132
+      PC Computer - MapleStory - Poisoned Stone Bug_23: 1552449442
+      PC Computer - MapleStory - Poisoned Stone Bug_5: 1289113180
+      PC Computer - MapleStory - Poisoned Stone Bug_28: 1852807754
+      PC Computer - MapleStory - Poisoned Stone Bug_45: 121289240
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
