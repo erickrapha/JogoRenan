@@ -1,46 +1,50 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Boss2Control : MonoBehaviour
 {
     [Header("Atributos")]
-    public float distance;
-    public float speed;
+    public float moveSpeed; 
     public int health;
-    
-    [Header("Booleanos")]
+
+    [Header("Booleanos")] 
     public bool isRight;
-    
+
     [Header("Componentes")]
-    public Transform groundCheck;
     public Animator anim;
+    public Rigidbody2D rigB2;
     
 
-    
-    void Update()
+    public void Start()
+    {
+        anim = GetComponent<Animator>();
+        rigB2 = GetComponent<Rigidbody2D>();
+    }
+
+    void FixedUpdate()
     {
         MoveBoss();
     }
 
     private void MoveBoss()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
-        RaycastHit2D ground = Physics2D.Raycast(groundCheck.position, Vector2.down, distance);
-
-        if (ground.collider == false)
+        if (isRight)
         {
-            if (isRight == true)
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                isRight = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 180, 0);
-                isRight = true;
-            }
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            transform.eulerAngles = new Vector2(0, 0);
         }
+        
+        if (!isRight)
+        {
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+            transform.eulerAngles = new Vector2(0, 180);
+        }
+        
+        
+        anim.SetInteger("transition", 1);
     }
 
     private void AttackBoss()
@@ -52,4 +56,22 @@ public class Boss2Control : MonoBehaviour
     {
         
     }
+
+    private void DieBoss()
+    {
+        health = 0;
+        anim.SetTrigger("Die");
+    }
+    
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.CompareTag("Wall"))
+        {
+            isRight = !isRight;
+        }
+    }
+
+   
+
+
 }
