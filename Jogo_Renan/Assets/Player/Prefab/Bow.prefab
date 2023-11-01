@@ -158,12 +158,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b85215090ef894fb6b4d26e7554ef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 7.5
   damage: 1
   isRight: 0
   enemyTags:
   - Enemy
-  - Finish
+  - Wall
 --- !u!82 &4424049231348081326
 AudioSource:
   m_ObjectHideFlags: 0

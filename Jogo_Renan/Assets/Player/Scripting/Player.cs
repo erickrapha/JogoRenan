@@ -13,13 +13,14 @@ public class Player : MonoBehaviour
     public GameObject bow;
     public Transform firePoint;
     public float cooldown = 0.7f;
-    public bool fireReady = true;
-    public float current;
+    private bool fireReady = true;
+    private float current;
     private Rigidbody2D rig;
     private bool doubleJump;
     private bool isFire;
     private AudioSource sound;
     public string[] enemyTags;
+    public AudioClip newSound;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            FindObjectOfType<GameMeneger>().CarregarProximaFase();
+            GameController.instance.CarregarProximaFase();
         }
 
         Move();
@@ -56,12 +57,9 @@ public class Player : MonoBehaviour
             }
         }
     }
-
-
     void Move()
     {
         float movement = Input.GetAxis("Horizontal");
-        //Debug.Log(movement);
         rig.velocity = new Vector2(movement * speed, rig.velocity.y);
 
         if (movement > 0)
@@ -115,7 +113,6 @@ public class Player : MonoBehaviour
     {
         StartCoroutine("Fire");
     }
-
     void FireNotIenumerator()
     {
         if (!fireReady)
@@ -221,11 +218,17 @@ public class Player : MonoBehaviour
 
         }
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Wall")
+        {
+            sound.PlayOneShot(newSound);
+        }
+
+
         if (collision.gameObject.layer == 3)
         {
+            sound.PlayOneShot(newSound); 
             isJumping = false;
         }
     }
