@@ -8,6 +8,7 @@ TagManager:
   - Tiro
   - Undefined
   - Wall
+  - Chao
   layers:
   - Default
   - TransparentFX

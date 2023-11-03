@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 1577319022}
   - component: {fileID: 1577319021}
   - component: {fileID: 1577319020}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
