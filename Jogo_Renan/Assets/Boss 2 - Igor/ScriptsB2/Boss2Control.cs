@@ -69,6 +69,7 @@ public class Boss2Control : MonoBehaviour
         {
             isRight = !isRight;
         }
+
     }
 
     public void DamageB2(int dmgB2)
@@ -77,5 +78,13 @@ public class Boss2Control : MonoBehaviour
         animB2.SetTrigger("hit");
     }
 
-
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.CompareTag("Tiro"))
+        {
+            moveSpeed = 0;
+            animB2.SetTrigger("hit");
+            
+        }
+    }
 }
