@@ -52,16 +52,16 @@ public class Bow : MonoBehaviour
                 if (collision.GetComponent<Health>())
                 {
                     //Executa se o objeto atacado tem Heath
-                    collision.GetComponent<Health>().TakeDamage(2);
+                    collision.GetComponent<Health>().TakeDamage(1);
                 }
-                /*if (collision.GetComponent<>())
+
+                //boss yeti
+                if (collision.GetComponent<Boss2Control>())
                 {
-                    collision.GetComponent<>().Damage();
+                    //Executa se o objeto atacado tem Heath
+                    collision.GetComponent<Boss2Control>().DamageB2(1);
                 }
-                if (collision.GetComponent<>())
-                {
-                    collision.GetComponent<>().Damage();
-                }*/
+
                 sound.Play();
                 //Trocar animação de destruir
                 animator.Play("Destroy_Bow");

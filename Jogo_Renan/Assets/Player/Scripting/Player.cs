@@ -19,9 +19,7 @@ public class Player : MonoBehaviour
     private bool doubleJump;
     private bool isFire;
     private AudioSource sound;
-    public string[] enemyTags;
-    public AudioClip newSound;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -44,18 +42,15 @@ public class Player : MonoBehaviour
 
         Move();
         Jump();
-        // BowFire();
         FireNotIenumerator();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        foreach(var tag in enemyTags)
+        if (collision.tag == "Enemy")
         {
-            if (collision.tag == tag)
-            {
-                Damage(1);
-            }
+            Damage(1);
         }
+        
     }
     void Move()
     {
@@ -220,15 +215,8 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Wall")
-        {
-            sound.PlayOneShot(newSound);
-        }
-
-
         if (collision.gameObject.layer == 3)
         {
-            sound.PlayOneShot(newSound); 
             isJumping = false;
         }
     }
