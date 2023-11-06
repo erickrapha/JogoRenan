@@ -54,14 +54,19 @@ public class Boss2Control : MonoBehaviour
 
     private void AlterandoEstágio()
     {
-        
+        Invoke(nameof(BackSpeed),0f);
     }
 
     private void DieBoss()
     {
-        healthB2 = 0;
-        animB2.SetTrigger("Die");
+        if (healthB2 == 0)
+        {
+            moveSpeed = 0;
+            animB2.SetTrigger("Die");
+        }
     }
+        
+        
     
     void OnCollisionEnter2D(Collision2D coll)
     {
@@ -84,7 +89,22 @@ public class Boss2Control : MonoBehaviour
         {
             moveSpeed = 0;
             animB2.SetTrigger("hit");
-            
+            Invoke(nameof(BackSpeed), 1f);
         }
+    }
+
+    void BackSpeed()
+    {
+        if (healthB2 > 6)
+        {
+            moveSpeed = 5;
+        }
+
+        if (healthB2 <= 6)
+        {
+            moveSpeed = 8;
+        }
+
+        
     }
 }
