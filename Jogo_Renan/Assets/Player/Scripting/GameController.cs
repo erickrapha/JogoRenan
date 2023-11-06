@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
 public class GameController : MonoBehaviour
-{
+{   
+    public string proximaFase;
     public Text heathText;
     public static GameController instance;
 
@@ -14,11 +16,9 @@ public class GameController : MonoBehaviour
     {
         instance = this;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void CarregarProximaFase()
     {
-        
+        SceneManager.LoadScene(proximaFase);
     }
     public void UpdateLives(int value)
     {
