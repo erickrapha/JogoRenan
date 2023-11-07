@@ -13,19 +13,20 @@ public class BallYetiProjetil : MonoBehaviour
    
     void Start()
     {
-        Destroy(gameObject, 3f);
+        rigBall = GetComponent<Rigidbody2D>();
+        animBall = GetComponent<Animator>();
+        Destroy(gameObject, 2f);
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (isRight)
+        if (!isRight)
         {
             rigBall.velocity = Vector2.right * speedBall;
         }
         
-        if (!isRight)
+        if (isRight)
         {
             rigBall.velocity = Vector2.left * speedBall;
         }
@@ -36,6 +37,11 @@ public class BallYetiProjetil : MonoBehaviour
         if (colBall.gameObject.CompareTag("Player"))
         {
             colBall.gameObject.GetComponent<Player>().Damage(damageBallYeti);
+        }
+        
+        if (colBall.gameObject.CompareTag("Wall"))
+        {
+            Destroy(gameObject, 0f);
         }
     }
 }
