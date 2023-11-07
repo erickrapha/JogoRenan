@@ -6,20 +6,24 @@ using UnityEngine;
 
 public class StoneBugControl : MonoBehaviour
 {
+    [Header("Componentes")]
     private Rigidbody2D rig;
     private Animator anim;
-
-    public bool isRight;
-    public float speed;
     public Player playerScript;
+    
+    [Header("Atributos")]
+    public int speed;
+    public int health;
+
+    [Header("Movimentação")]
+    public bool isLeft;
     
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        anim.SetBool("isRunning", true);
 
-        if (isRight)
+        if (isLeft)
         {
             Vector3 newScale = transform.localScale;
             newScale.x *= -1;
@@ -34,16 +38,17 @@ public class StoneBugControl : MonoBehaviour
 
     void MoveBug()
     {
-        float moveDirection = isRight ? 1 : -1;
+        float moveDirection = isLeft ? 1 : -1;
         Vector2 velocity = new Vector2(moveDirection * speed, rig.velocity.y);
         rig.velocity = velocity;
+        anim.SetInteger("value",1);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Wall"))
         {
-            isRight = !isRight;
+            isLeft = !isLeft;
             Vector3 newScale = transform.localScale;
             newScale.x *= -1;
             transform.localScale = newScale;
@@ -53,6 +58,7 @@ public class StoneBugControl : MonoBehaviour
         {
             playerScript.Damage(1);
         }
+        
     }
     
 }
