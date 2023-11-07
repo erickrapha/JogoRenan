@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Boss2Control : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class Boss2Control : MonoBehaviour
 
     [Header("Booleanos")] 
     public bool isRight;
+    public bool isCharging;
 
     [Header("Componentes")]
     public Animator animB2;
@@ -25,29 +27,48 @@ public class Boss2Control : MonoBehaviour
     {
         animB2 = GetComponent<Animator>();
         rigB2 = GetComponent<Rigidbody2D>();
+        
     }
 
     void FixedUpdate()
     {
         MoveBoss();
+
+        if (healthB2 <= 6 && !isCharging)
+        {
+            StartCoroutine(ChangeStageChargeAttackSpeed());
+        }
+        
+        if (healthB2 <= 0)
+        {
+            moveSpeed = 0f;
+            healthB2 = 0;
+            DieBoss();
+        }
     }
 
     private void MoveBoss()
     {
         if (isRight)
-        {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-            transform.eulerAngles = new Vector2(0, 0);
-        }
+            {
+                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+                transform.eulerAngles = new Vector2(0, 0);
+            }
         
-        if (!isRight)
-        {
-            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-            transform.eulerAngles = new Vector2(0, 180);
-        }
-        
-        
-        animB2.SetInteger("transition", 1);
+            if (!isRight)
+            {
+                transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+                transform.eulerAngles = new Vector2(0, 180);
+            }
+
+            if (healthB2 <= 0)
+            {
+                return;
+            }
+
+
+
+            animB2.SetInteger("transition", 1);
     }
 
     private void AttackBoss()
@@ -55,30 +76,36 @@ public class Boss2Control : MonoBehaviour
         
     }
 
-    private void AlterandoEstágio()
-    {
-        Invoke(nameof(BackSpeed),0f);
-    }
-
+    
     private void DieBoss()
     {
-        if (healthB2 == 0)
-        {
-            moveSpeed = 0;
-            animB2.SetTrigger("Die");
-        }
+        animB2.SetTrigger("Die");
+        Invoke(nameof(CarregarProxFase), 5f);
     }
+
+    private IEnumerator ChangeStageChargeAttackSpeed()
+    {
+        isCharging = true;
+        yield return new WaitForSeconds(0.5f);
+        animB2.SetTrigger("charge");
         
+        yield return new WaitForSeconds(0.5f);
+        moveSpeed = 0f;
+        
+        yield return new WaitForSeconds(0.5f);
+        animB2.SetInteger("transition", 1);
+        BackSpeed();
+    }
     void BackSpeed()
     {
         if (healthB2 > 6)
         {
-            moveSpeed = 5;
+            moveSpeed = 5f;
         }
 
         if (healthB2 <= 6)
         {
-            moveSpeed = 8;
+            moveSpeed = 8f;
         }
 
         
@@ -89,11 +116,17 @@ public class Boss2Control : MonoBehaviour
         healthB2 -= dmgB2;
         animB2.SetTrigger("hit");
         Invoke(nameof(UptadeTextHealthB2), 0f);
+        
     }
 
     void UptadeTextHealthB2()
     {
         b2TextHealth.text = "x " + healthB2;
+    }
+
+    void CarregarProxFase()
+    {
+        SceneManager.LoadScene("Boss 3 - Bab");
     }
     
     void OnCollisionEnter2D(Collision2D coll)
@@ -116,7 +149,7 @@ public class Boss2Control : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("Tiro"))
         {
-            moveSpeed = 0;
+            moveSpeed = 0f;
             animB2.SetTrigger("hit");
             Invoke(nameof(BackSpeed), 1f);
         }
