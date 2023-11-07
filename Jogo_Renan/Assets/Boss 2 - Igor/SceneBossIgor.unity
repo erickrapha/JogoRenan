@@ -1257,6 +1257,18 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3316815564576002081, guid: f88deaaf4475985449c74b2ad30f04f9, type: 3}
+      propertyPath: timeAttack
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3316815564576002081, guid: f88deaaf4475985449c74b2ad30f04f9, type: 3}
+      propertyPath: ballYetiAtk
+      value: 
+      objectReference: {fileID: 8749877749631366248, guid: e04cc311767c125439fee75902b74ac2, type: 3}
+    - target: {fileID: 3316815564576002081, guid: f88deaaf4475985449c74b2ad30f04f9, type: 3}
+      propertyPath: ballYetiPos
+      value: 
+      objectReference: {fileID: 7250468025597898119, guid: e04cc311767c125439fee75902b74ac2, type: 3}
+    - target: {fileID: 3316815564576002081, guid: f88deaaf4475985449c74b2ad30f04f9, type: 3}
       propertyPath: b2TextHealth
       value: 
       objectReference: {fileID: 780567928}

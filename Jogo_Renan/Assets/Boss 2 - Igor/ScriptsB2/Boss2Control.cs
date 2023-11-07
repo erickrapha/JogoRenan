@@ -21,6 +21,13 @@ public class Boss2Control : MonoBehaviour
     [Header("Componentes")]
     public Animator animB2;
     public Rigidbody2D rigB2;
+
+    [Header("Attack")] 
+    public float timeAttack = 4f;
+    public GameObject ballYetiAtk;
+    public Transform ballYetiPos;
+    public bool isAtk;
+    
     
 
     public void Start()
@@ -50,30 +57,35 @@ public class Boss2Control : MonoBehaviour
     private void MoveBoss()
     {
         if (isRight)
-            {
+        {
                 transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
                 transform.eulerAngles = new Vector2(0, 0);
-            }
+        }
         
-            if (!isRight)
-            {
+        if (!isRight)
+        {
                 transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
                 transform.eulerAngles = new Vector2(0, 180);
-            }
+        }
 
-            if (healthB2 <= 0)
-            {
+        if (healthB2 <= 0)
+        {
                 return;
-            }
+        }
 
 
 
-            animB2.SetInteger("transition", 1);
+        animB2.SetInteger("transition", 1);
     }
 
     private void AttackBoss()
     {
-        
+        animB2.SetInteger("Transition", 4 );
+        BallYetiProjetil newBall = Instantiate(ballYetiAtk, transform.position, Quaternion.identity)
+            .GetComponent<BallYetiProjetil>();
+        isAtk = false;
+        Invoke(nameof(TimeForAttack), timeAttack);
+
     }
 
     
@@ -95,6 +107,7 @@ public class Boss2Control : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         animB2.SetInteger("transition", 1);
         BackSpeed();
+        timeAttack = 2f;
     }
     void BackSpeed()
     {
@@ -117,6 +130,11 @@ public class Boss2Control : MonoBehaviour
         animB2.SetTrigger("hit");
         Invoke(nameof(UptadeTextHealthB2), 0f);
         
+    }
+
+    public void TimeForAttack()
+    {
+        isAtk = true;
     }
 
     void UptadeTextHealthB2()
