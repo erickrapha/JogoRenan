@@ -13,7 +13,6 @@ public class Bow : MonoBehaviour
     private AudioSource sound;
     public string[] enemyTags;
 
-    // Start is called before the first frame update
     void Start()
     {
         TryGetComponent(out animator);
@@ -22,8 +21,6 @@ public class Bow : MonoBehaviour
        
         sound = GetComponent<AudioSource>();
     }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (hit)
@@ -54,14 +51,18 @@ public class Bow : MonoBehaviour
                     //Executa se o objeto atacado tem Heath
                     collision.GetComponent<Health>().TakeDamage(1);
                 }
-
                 //boss yeti
                 if (collision.GetComponent<Boss2Control>())
                 {
                     //Executa se o objeto atacado tem Heath
                     collision.GetComponent<Boss2Control>().DamageB2(1);
                 }
-
+                //boss vitoria
+                if (collision.GetComponent<Health>())
+                {
+                    //Executa se o objeto atacado tem Heath
+                    collision.GetComponent<Health>().TakeDamage(1);
+                }
                 sound.Play();
                 //Trocar animação de destruir
                 animator.Play("Destroy_Bow");
@@ -69,6 +70,7 @@ public class Bow : MonoBehaviour
                 //Aplicar dano no Enemy
                 Destroy(gameObject, 0.75f);
             }
+
         }
 
     }

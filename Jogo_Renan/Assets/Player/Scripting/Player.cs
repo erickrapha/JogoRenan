@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
     private bool isFire;
     private AudioSource sound;
     
-    // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -31,8 +30,6 @@ public class Player : MonoBehaviour
         current = cooldown;
         fireReady = true;
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
@@ -99,14 +96,11 @@ public class Player : MonoBehaviour
                     rig.AddForce(new Vector2(0, Jumpforce * 2), ForceMode2D.Impulse);
                     doubleJump = false;
                 }
+
             }
 
         }
         
-    }
-    void BowFire()
-    {
-        StartCoroutine("Fire");
     }
     void FireNotIenumerator()
     {
@@ -120,7 +114,6 @@ public class Player : MonoBehaviour
                 fireReady = true;
             }
         }
-
         if (Input.GetKeyDown(KeyCode.E) && fireReady)
         {
             fireReady = false;
@@ -137,9 +130,9 @@ public class Player : MonoBehaviour
                 Bow.GetComponent<Bow>().isRight = false;
             }
 
-            Invoke("BackToTransicao", 0.25f);
-            
+            Invoke("BackToTransicao", 0.25f);   
         }
+
     }
     void BackToTransicao()
     {
@@ -166,8 +159,6 @@ public class Player : MonoBehaviour
                 fireReady = true;
             }
         }
-        
-
         if (Input.GetKeyDown(KeyCode.E) && fireReady)
         {
             fireReady = false;
@@ -188,6 +179,7 @@ public class Player : MonoBehaviour
             isFire = false;
             anim.SetInteger("transicao", 0);
         }
+
     }
     public void Damage(int dmg)
     {
@@ -210,8 +202,8 @@ public class Player : MonoBehaviour
         {
             //Chamar o game over
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
         }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -219,6 +211,7 @@ public class Player : MonoBehaviour
         {
             isJumping = false;
         }
+
     }
 
 }
