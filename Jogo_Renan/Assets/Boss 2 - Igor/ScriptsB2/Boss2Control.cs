@@ -17,13 +17,13 @@ public class Boss2Control : MonoBehaviour
     [Header("Booleanos")] 
     public bool isRight;
     public bool isCharging;
+    public bool isStage2 = false;
 
     [Header("Componentes")]
     public Animator animB2;
     public Rigidbody2D rigB2;
 
-    [Header("Attack")] 
-    public float timeAttack;
+    [Header("Attack")]
     public GameObject ballYetiAtk;
     public Transform ballYetiPos;
     public bool isAtk;
@@ -35,6 +35,7 @@ public class Boss2Control : MonoBehaviour
         animB2 = GetComponent<Animator>();
         rigB2 = GetComponent<Rigidbody2D>();
         
+        StartCoroutine(AttackTimer());
     }
 
     void FixedUpdate()
@@ -43,7 +44,7 @@ public class Boss2Control : MonoBehaviour
 
         if (healthB2 <= 6 && !isCharging)
         {
-            StartCoroutine(ChangeStageChargeAttackSpeed());
+            StartCoroutine(ChangeStageChargeSpeed());
         }
         
         if (healthB2 <= 0)
@@ -53,7 +54,6 @@ public class Boss2Control : MonoBehaviour
             DieBoss();
         }
         
-        AttackBoss();
     }
 
     private void MoveBoss()
@@ -79,19 +79,7 @@ public class Boss2Control : MonoBehaviour
 
         animB2.SetInteger("transition", 1);
     }
-
-    private void AttackBoss()
-    {
-        //if (isAtk)
-        //{
-            animB2.SetInteger("Transition", 4 );
-            BallYetiProjetil newBall = Instantiate(ballYetiAtk, transform.position, Quaternion.identity).GetComponent<BallYetiProjetil>();
-            isAtk = false;
-            Invoke(nameof(TimeForAttack), timeAttack);
-        //}
-        
-
-    }
+    
 
     
     private void DieBoss()
@@ -100,7 +88,7 @@ public class Boss2Control : MonoBehaviour
         Invoke(nameof(CarregarProxFase), 5f);
     }
 
-    private IEnumerator ChangeStageChargeAttackSpeed()
+    private IEnumerator ChangeStageChargeSpeed()
     {
         isCharging = true;
         yield return new WaitForSeconds(0.5f);
@@ -112,7 +100,6 @@ public class Boss2Control : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         animB2.SetInteger("transition", 1);
         BackSpeed();
-        timeAttack = 2f;
     }
     
     void BackSpeed()
@@ -138,9 +125,41 @@ public class Boss2Control : MonoBehaviour
         
     }
 
-    public void TimeForAttack()
+    IEnumerator AttackTimer()
     {
-        isAtk = true;
+        while (true)
+        {
+            if (healthB2 <= 6)
+            {
+                isStage2 = true;
+            }
+
+            if (isStage2)
+            {
+                AttackB2();
+                yield return new WaitForSeconds(3f);
+            }
+
+            else
+            {
+                AttackB2();
+                yield return new WaitForSeconds(5f);
+            }  
+        }
+    }
+
+    void AttackB2()
+    {
+        GameObject newBall = Instantiate(ballYetiAtk, ballYetiPos.position, ballYetiPos.rotation);
+        if (transform.rotation.y == 0 && isRight)
+        {
+            newBall.GetComponent<BallYetiProjetil>().isRight = true;
+        }
+        if (transform.rotation.y == 180 && !isRight)
+        {
+            newBall.GetComponent<BallYetiProjetil>().isRight = false;
+        }
+
     }
 
     void UptadeTextHealthB2()

@@ -19,14 +19,14 @@ public class BallYetiProjetil : MonoBehaviour
         
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (!isRight)
         {
             rigBall.velocity = Vector2.right * speedBall;
         }
-        
-        if (isRight)
+
+        else
         {
             rigBall.velocity = Vector2.left * speedBall;
         }
