@@ -442,7 +442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7064966670883835822, guid: e0292d5c412b567458c3d9d18842614f, type: 3}
       propertyPath: proximaFase
-      value: Boss 3 - Bab
+      value: "Boss1_Vit\xF3ria"
       objectReference: {fileID: 0}
     - target: {fileID: 7064966670883835823, guid: e0292d5c412b567458c3d9d18842614f, type: 3}
       propertyPath: m_RootOrder
