@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1980385126030823482}
   - component: {fileID: 549266907636337434}
   - component: {fileID: 2013393764586695839}
+  - component: {fileID: 134821491}
   m_Layer: 0
   m_Name: BallYeti
   m_TagString: Untagged
@@ -147,6 +148,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRight: 0
   animBall: {fileID: 0}
-  speedBall: 4
+  speedBall: 7
   damageBallYeti: 1
-  rigBall: {fileID: 0}
+  rigBall: {fileID: 134821491}
+--- !u!50 &134821491
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8749877749631366248}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

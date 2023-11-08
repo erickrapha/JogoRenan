@@ -23,15 +23,15 @@ public class Boss2Control : MonoBehaviour
     public Rigidbody2D rigB2;
 
     [Header("Attack")] 
-    public float timeAttack = 4f;
+    public float timeAttack;
     public GameObject ballYetiAtk;
     public Transform ballYetiPos;
     public bool isAtk;
-    
-    
+
 
     public void Start()
     {
+        isAtk = true;
         animB2 = GetComponent<Animator>();
         rigB2 = GetComponent<Rigidbody2D>();
         
@@ -52,6 +52,8 @@ public class Boss2Control : MonoBehaviour
             healthB2 = 0;
             DieBoss();
         }
+        
+        AttackBoss();
     }
 
     private void MoveBoss()
@@ -80,11 +82,14 @@ public class Boss2Control : MonoBehaviour
 
     private void AttackBoss()
     {
-        animB2.SetInteger("Transition", 4 );
-        BallYetiProjetil newBall = Instantiate(ballYetiAtk, transform.position, Quaternion.identity)
-            .GetComponent<BallYetiProjetil>();
-        isAtk = false;
-        Invoke(nameof(TimeForAttack), timeAttack);
+        //if (isAtk)
+        //{
+            animB2.SetInteger("Transition", 4 );
+            BallYetiProjetil newBall = Instantiate(ballYetiAtk, transform.position, Quaternion.identity).GetComponent<BallYetiProjetil>();
+            isAtk = false;
+            Invoke(nameof(TimeForAttack), timeAttack);
+        //}
+        
 
     }
 
@@ -109,6 +114,7 @@ public class Boss2Control : MonoBehaviour
         BackSpeed();
         timeAttack = 2f;
     }
+    
     void BackSpeed()
     {
         if (healthB2 > 6)

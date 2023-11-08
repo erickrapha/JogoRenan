@@ -63,7 +63,7 @@ public class Bow : MonoBehaviour
                 }
 
                 sound.Play();
-                //Trocar animação de destruir
+                //Trocar animaÃ§Ã£o de destruir
                 animator.Play("Destroy_Bow");
                 hit = true;
                 //Aplicar dano no Enemy
