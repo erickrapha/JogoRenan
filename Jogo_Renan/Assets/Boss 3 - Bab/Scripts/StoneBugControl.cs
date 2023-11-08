@@ -31,12 +31,10 @@ public class StoneBugControl : MonoBehaviour
             transform.localScale = newScale;
         }
     }
-    
     void Update()
     {
         MoveBug();
     }
-
     void MoveBug()
     {
         float moveDirection = isLeft ? 1 : -1;
@@ -44,7 +42,6 @@ public class StoneBugControl : MonoBehaviour
         rig.velocity = velocity;
         anim.SetInteger("value",1);
     }
-
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Wall"))
@@ -54,7 +51,6 @@ public class StoneBugControl : MonoBehaviour
             newScale.x *= -1;
             transform.localScale = newScale;
         }
-
         if (col.gameObject.CompareTag("Player"))
         {
             playerScript.Damage(1);

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public int heath = 3;
+    public int heath = 10;
     public float speed;
     public float Jumpforce;
     public Animator anim;

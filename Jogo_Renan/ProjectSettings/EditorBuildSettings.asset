@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Boss 3 - Bab/Boss 3 - Bab.unity
     guid: fdef9714d9213bd42a42cc5c3f40e3be
+  - enabled: 1
+    path: "Assets/Boss 1 -Vitoria/Boss1_Vit\xF3ria.unity"
+    guid: e13751cd5a5e4974cbaa3a9952e3e403
   m_configObjects: {}

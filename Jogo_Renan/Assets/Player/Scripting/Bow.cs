@@ -18,7 +18,6 @@ public class Bow : MonoBehaviour
         TryGetComponent(out animator);
         TryGetComponent(out rig);
         Destroy(gameObject, 2f);
-       
         sound = GetComponent<AudioSource>();
     }
     void FixedUpdate()
@@ -28,7 +27,6 @@ public class Bow : MonoBehaviour
             rig.velocity = Vector2.zero;
             return;
         }
-
         if (isRight)
         {
             rig.velocity = Vector2.right * speed;
@@ -58,10 +56,10 @@ public class Bow : MonoBehaviour
                     collision.GetComponent<Boss2Control>().DamageB2(1);
                 }
                 //boss vitoria
-                if (collision.GetComponent<Health>())
+                if (collision.GetComponent<Vitória_Boss1>())
                 {
                     //Executa se o objeto atacado tem Heath
-                    collision.GetComponent<Health>().TakeDamage(1);
+                    collision.GetComponent<Vitória_Boss1>().Damage(1);
                 }
                 sound.Play();
                 //Trocar animação de destruir

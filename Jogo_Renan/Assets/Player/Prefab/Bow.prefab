@@ -164,6 +164,7 @@ MonoBehaviour:
   enemyTags:
   - Enemy
   - Wall
+  - Wall
 --- !u!82 &4424049231348081326
 AudioSource:
   m_ObjectHideFlags: 0

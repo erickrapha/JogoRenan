@@ -751,7 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScript: {fileID: 1984797708}
   speed: 4
-  health: 20
+  health: 10
   isLeft: 0
 --- !u!1 &1426720276
 GameObject:

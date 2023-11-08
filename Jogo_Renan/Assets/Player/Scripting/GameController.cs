@@ -18,10 +18,14 @@ public class GameController : MonoBehaviour
     }
     public void CarregarProximaFase()
     {
-        SceneManager.LoadScene(proximaFase);
+        Invoke(nameof(Load), 1);
     }
     public void UpdateLives(int value)
     {
         heathText.text = "x " + value.ToString();
+    }
+    private void Load()
+    {
+        SceneManager.LoadScene(proximaFase);
     }
 }
