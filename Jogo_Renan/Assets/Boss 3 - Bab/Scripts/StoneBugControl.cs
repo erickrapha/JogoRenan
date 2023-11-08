@@ -14,7 +14,7 @@ public class StoneBugControl : MonoBehaviour
     
     [Header("Atributos")]
     public int speed;
-    public int health;
+    public int health = 10;
 
     [Header("Movimentação")]
     public bool isLeft;
@@ -57,5 +57,15 @@ public class StoneBugControl : MonoBehaviour
         }
         
     }
-    
+    public void Damage(int dmg)
+    {
+        health -= dmg;
+        
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
 }

@@ -8,7 +8,7 @@ public class Vitória_Boss1 : MonoBehaviour
     public float speed;
     //public float walkTime;
     public float timer;
-    public int health;
+    public int health = 10;
     private bool walkRight;
 
     private Animator anim;

@@ -10,7 +10,7 @@ public class Boss2Control : MonoBehaviour
 {
     [Header("Atributos")]
     public float moveSpeed; 
-    public int healthB2 = 10;
+    public int healthB2 = 12;
     public int damageb2 = 1;
     public Text b2TextHealth;
 

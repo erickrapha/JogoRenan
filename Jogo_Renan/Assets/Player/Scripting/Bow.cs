@@ -44,10 +44,10 @@ public class Bow : MonoBehaviour
             if (collision.gameObject.tag == tag)
             {
                 //boss bug
-                if (collision.GetComponent<Health>())
+                if (collision.GetComponent<StoneBugControl>())
                 {
                     //Executa se o objeto atacado tem Heath
-                    collision.GetComponent<Health>().TakeDamage(1);
+                    collision.GetComponent<StoneBugControl>().Damage(1);
                 }
                 //boss yeti
                 if (collision.GetComponent<Boss2Control>())
