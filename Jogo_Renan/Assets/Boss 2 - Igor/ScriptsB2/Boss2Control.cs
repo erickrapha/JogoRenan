@@ -137,13 +137,13 @@ public class Boss2Control : MonoBehaviour
             if (isStage2)
             {
                 AttackB2();
-                yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(1f);
             }
 
             else
             {
                 AttackB2();
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(3.5f);
             }  
         }
     }
@@ -151,11 +151,11 @@ public class Boss2Control : MonoBehaviour
     void AttackB2()
     {
         GameObject newBall = Instantiate(ballYetiAtk, ballYetiPos.position, ballYetiPos.rotation);
-        if (transform.rotation.y == 0 && isRight)
+        if (isRight)
         {
             newBall.GetComponent<BallYetiProjetil>().isRight = true;
         }
-        if (transform.rotation.y == 180 && !isRight)
+        else
         {
             newBall.GetComponent<BallYetiProjetil>().isRight = false;
         }

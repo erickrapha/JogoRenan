@@ -21,11 +21,11 @@ public class BallYetiProjetil : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!isRight)
+        if (isRight)
         {
             rigBall.velocity = Vector2.right * speedBall;
         }
-
+        
         else
         {
             rigBall.velocity = Vector2.left * speedBall;
@@ -37,11 +37,12 @@ public class BallYetiProjetil : MonoBehaviour
         if (colBall.gameObject.CompareTag("Player"))
         {
             colBall.gameObject.GetComponent<Player>().Damage(damageBallYeti);
+            Destroy(gameObject);
         }
         
         if (colBall.gameObject.CompareTag("Wall"))
         {
-            Destroy(gameObject, 0f);
+            Destroy(gameObject);
         }
     }
 }
