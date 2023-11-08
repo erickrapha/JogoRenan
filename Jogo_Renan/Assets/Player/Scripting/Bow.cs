@@ -64,7 +64,7 @@ public class Bow : MonoBehaviour
                     collision.GetComponent<Health>().TakeDamage(1);
                 }
                 sound.Play();
-                //Trocar animação de destruir
+                //Trocar animaÃ§Ã£o de destruir
                 animator.Play("Destroy_Bow");
                 hit = true;
                 //Aplicar dano no Enemy
