@@ -42,7 +42,7 @@ public class Health : MonoBehaviour
     {
         if(col.gameObject.CompareTag("Tiro"))
         {
-            TakeDamage(4);
+            TakeDamage(1);
         }
     }
 }

@@ -298,6 +298,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7064966669742630544, guid: e0292d5c412b567458c3d9d18842614f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 232
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064966669742630544, guid: e0292d5c412b567458c3d9d18842614f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -190
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064966670142405193, guid: e0292d5c412b567458c3d9d18842614f, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
     - target: {fileID: 7064966670883835809, guid: e0292d5c412b567458c3d9d18842614f, type: 3}
       propertyPath: m_Name
       value: GameController
@@ -583,7 +595,6 @@ GameObject:
   - component: {fileID: 1391650626}
   - component: {fileID: 1391650627}
   - component: {fileID: 1391650629}
-  - component: {fileID: 1391650630}
   - component: {fileID: 1391650631}
   m_Layer: 0
   m_Name: StoneBug
@@ -726,20 +737,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1391650630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391650623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e2f0b85cc7c1e646a3cdaefb4263d71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxLife: 20
-  nowLife: 0
 --- !u!114 &1391650631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,7 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScript: {fileID: 1984797708}
   speed: 4
-  health: 0
+  health: 20
   isLeft: 0
 --- !u!1 &1426720276
 GameObject:
