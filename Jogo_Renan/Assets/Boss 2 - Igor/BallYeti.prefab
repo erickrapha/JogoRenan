@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRight: 0
   animBall: {fileID: 0}
-  speedBall: 7
+  speedBall: 10
   damageBallYeti: 1
   rigBall: {fileID: 134821491}
 --- !u!50 &134821491
@@ -183,7 +183,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a43de321b38bd8545925fd96e06cb12e, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

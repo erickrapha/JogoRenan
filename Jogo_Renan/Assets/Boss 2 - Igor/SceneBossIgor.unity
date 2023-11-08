@@ -1394,9 +1394,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3316815564576002081, guid: f88deaaf4475985449c74b2ad30f04f9, type: 3}
+      propertyPath: srcB2
+      value: 
+      objectReference: {fileID: 1908678934}
+    - target: {fileID: 3316815564576002081, guid: f88deaaf4475985449c74b2ad30f04f9, type: 3}
       propertyPath: animB2
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3316815564576002081, guid: f88deaaf4475985449c74b2ad30f04f9, type: 3}
+      propertyPath: clip1b2
+      value: 
+      objectReference: {fileID: 8300000, guid: a43de321b38bd8545925fd96e06cb12e, type: 3}
+    - target: {fileID: 3316815564576002081, guid: f88deaaf4475985449c74b2ad30f04f9, type: 3}
+      propertyPath: clip2b2
+      value: 
+      objectReference: {fileID: 8300000, guid: 7441906e3ac3f154996bbef14c377527, type: 3}
     - target: {fileID: 3316815564576002081, guid: f88deaaf4475985449c74b2ad30f04f9, type: 3}
       propertyPath: healthB2
       value: 12

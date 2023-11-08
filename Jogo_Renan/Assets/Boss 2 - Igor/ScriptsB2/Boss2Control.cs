@@ -12,7 +12,7 @@ public class Boss2Control : MonoBehaviour
     public float moveSpeed; 
     public int healthB2 = 12;
     public int damageb2 = 1;
-    public Text b2TextHealth;
+    
 
     [Header("Booleanos")] 
     public bool isRight;
@@ -22,6 +22,10 @@ public class Boss2Control : MonoBehaviour
     [Header("Componentes")]
     public Animator animB2;
     public Rigidbody2D rigB2;
+    public Text b2TextHealth;
+    public AudioSource srcB2;
+    public AudioClip clip1b2;
+    public AudioClip clip2b2;
 
     [Header("Attack")]
     public GameObject ballYetiAtk;
@@ -33,6 +37,7 @@ public class Boss2Control : MonoBehaviour
         isAtk = true;
         animB2 = GetComponent<Animator>();
         rigB2 = GetComponent<Rigidbody2D>();
+        srcB2 = GetComponent<AudioSource>();
         
         StartCoroutine(AttackTimer());
     }
@@ -73,6 +78,8 @@ public class Boss2Control : MonoBehaviour
     private void DieBoss()
     {
         animB2.SetTrigger("Die");
+        srcB2.volume = 0.200f;
+        srcB2.PlayOneShot(clip2b2);
         Invoke(nameof(CarregarProxFase), 2.5f);
     }
     private IEnumerator ChangeStageChargeSpeed()
@@ -130,15 +137,26 @@ public class Boss2Control : MonoBehaviour
     }
     void AttackB2()
     {
-        GameObject newBall = Instantiate(ballYetiAtk, ballYetiPos.position, ballYetiPos.rotation);
-        if (isRight)
+        if (healthB2 <= 0)
         {
-            newBall.GetComponent<BallYetiProjetil>().isRight = true;
+            return;
         }
+
         else
         {
-            newBall.GetComponent<BallYetiProjetil>().isRight = false;
+            srcB2.volume = 0.200f;
+            srcB2.PlayOneShot(clip1b2);
+            GameObject newBall = Instantiate(ballYetiAtk, ballYetiPos.position, ballYetiPos.rotation);
+            if (isRight)
+            {
+                newBall.GetComponent<BallYetiProjetil>().isRight = true;
+            }
+            else
+            {
+                newBall.GetComponent<BallYetiProjetil>().isRight = false;
+            }
         }
+        
 
     }
     void UptadeTextHealthB2()
