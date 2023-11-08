@@ -85,7 +85,7 @@ public class Boss2Control : MonoBehaviour
     private void DieBoss()
     {
         animB2.SetTrigger("Die");
-        Invoke(nameof(CarregarProxFase), 5f);
+        Invoke(nameof(CarregarProxFase), 2.5f);
     }
 
     private IEnumerator ChangeStageChargeSpeed()
@@ -169,7 +169,7 @@ public class Boss2Control : MonoBehaviour
 
     void CarregarProxFase()
     {
-        SceneManager.LoadScene("Boss 3 - Bab");
+        GameController.instance.CarregarProximaFase();
     }
     
     void OnCollisionEnter2D(Collision2D coll)
