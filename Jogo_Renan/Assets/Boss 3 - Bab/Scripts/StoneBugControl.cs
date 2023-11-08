@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoneBugControl : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class StoneBugControl : MonoBehaviour
 
     [Header("Movimentação")]
     public bool isLeft;
-    
+
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
