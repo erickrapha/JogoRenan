@@ -1,24 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     public int maxLife;
     public int nowLife;
 
-    Animator anim; 
+    public Text quant_vida;
+
+    public Animator anim; 
 
     void Awake()
     {
         nowLife = maxLife;
-        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateLive(nowLife);
     }
 
     void FixedUpdate()
@@ -26,12 +28,17 @@ public class Health : MonoBehaviour
         
     }
 
+    void UpdateLive(int value)
+    {
+        quant_vida.text = "x " + value.ToString();
+    }
+
     public void TakeDamage(int damage)
     {
         nowLife -= damage;
-        anim.SetTrigger("Hit");
+        anim.SetTrigger("isHit");
 
-        if(nowLife >= 0)
+        if(nowLife <= 0)
         {
             Destroy(gameObject);
         }
@@ -45,4 +52,5 @@ public class Health : MonoBehaviour
             TakeDamage(1);
         }
     }
+
 }

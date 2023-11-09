@@ -11,10 +11,14 @@ public class StoneBugControl : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
     public Player playerScript;
+    public Health HP;
     
     [Header("Atributos")]
     public int speed;
-    public int health;
+    public GameObject tiroGameObject;
+    public Transform firePoint; 
+    public float shootTime;
+    private float nowTime;
 
     [Header("Movimentação")]
     public bool isLeft;
@@ -35,6 +39,8 @@ public class StoneBugControl : MonoBehaviour
     void Update()
     {
         MoveBug();
+        ShootLogic();
+
     }
 
     void MoveBug()
@@ -59,7 +65,27 @@ public class StoneBugControl : MonoBehaviour
         {
             playerScript.Damage(1);
         }
+    }
+
+    void Atirar()
+    {
+        Tiro tiroScript = Instantiate(tiroGameObject, firePoint.position, Quaternion.identity).GetComponent<Tiro>();
+        tiroScript.IniciarTiro(isLeft);
         
+        nowTime = 0;
+    }
+
+    void ShootLogic()
+    {
+        nowTime += Time.deltaTime;
+
+        if(HP.nowLife <= 6)
+        {
+            if(nowTime >= shootTime)
+            {
+                Atirar();
+            }
+        }
     }
     
 }
