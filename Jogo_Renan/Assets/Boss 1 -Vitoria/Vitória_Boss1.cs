@@ -9,7 +9,7 @@ public class Vitória_Boss1 : MonoBehaviour
    ///public float walkTime;
    private bool walkRight;
    
-   public int health;
+   public int health = 5;
    public float timer;
    
    private Animator anim;
@@ -21,6 +21,8 @@ public class Vitória_Boss1 : MonoBehaviour
     {
         rig = GetComponent< Rigidbody2D >();
         anim = GetComponent< Animator >();
+        
+        ControllerVitoria.instance.UpdateLives(health);
 
     }
     
