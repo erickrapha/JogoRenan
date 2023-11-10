@@ -8,6 +8,7 @@ TagManager:
   - Tiro
   - Undefined
   - Wall
+  - tirobossvitoria
   layers:
   - Default
   - TransparentFX

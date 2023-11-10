@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,14 +9,16 @@ public class Vitória_Boss1 : MonoBehaviour
 
     public int health = 5;
     public float timer;
-    
-    public GameObject objetoPrefab; 
+
+    public GameObject balaPrefab; 
     private Animator anim;
     private Rigidbody2D rig;
     public Player player;
-    public Text vida; 
+    public Text vida;
+    public Transform firePoint;
 
-    public float tempoTiro;
+    public float tempoEntreTiros = 1f;
+    private float tempoUltimoTiro; 
 
     void Start()
     {
@@ -25,13 +26,13 @@ public class Vitória_Boss1 : MonoBehaviour
         anim = GetComponent<Animator>();
 
         ControllerVitoria.instance.UpdateLives(health);
-
-        InvokeRepeating("SpawnObject", tempoTiro, tempoTiro);
+        tempoUltimoTiro = Time.time; 
     }
 
     void FixedUpdate()
     {
         UpdateHealthText();
+
         if (walkRight)
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -42,7 +43,30 @@ public class Vitória_Boss1 : MonoBehaviour
             transform.Translate(Vector2.right * speed * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 0);
         }
+
+        if (health <= 5)
+        {
+            if (Time.time - tempoUltimoTiro >= tempoEntreTiros)
+            {
+                SpawnObject(); 
+                tempoUltimoTiro = Time.time; 
+            }
+        }
     }
+
+    void SpawnObject()
+    {
+        
+        anim.SetInteger("transition", 1);
+        GameObject bala = Instantiate(balaPrefab, firePoint.position, Quaternion.identity);
+        
+        Bala balaScript = bala.GetComponent<Bala>();
+        if (balaScript != null)
+        {
+            balaScript.direcao = firePoint.right;
+        }
+    }
+
 
     public void Damage(int dmg)
     {
@@ -70,18 +94,13 @@ public class Vitória_Boss1 : MonoBehaviour
             player.Damage(1);
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Tiro"))
         {
             Damage(1);
         }
-    }
-
-    void SpawnObject()
-    {
-        Instantiate(objetoPrefab, transform.position, Quaternion.identity);
     }
 
     void UpdateHealthText()
