@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Player/CenaPlayer.unity
     guid: 9aa81977ca40f8a45ab4c65d81891750
   - enabled: 1
+    path: "Assets/Boss 1 -Vitoria/Boss1_Vit\xF3ria.unity"
+    guid: e13751cd5a5e4974cbaa3a9952e3e403
+  - enabled: 1
     path: Assets/Boss 2 - Igor/SceneBossIgor.unity
     guid: 296da07cd9e654f4ba1c186ed7efa6fd
   - enabled: 1

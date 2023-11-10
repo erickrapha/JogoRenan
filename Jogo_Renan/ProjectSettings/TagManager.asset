@@ -9,6 +9,7 @@ TagManager:
   - Undefined
   - Wall
   - Chao
+  - b1
   layers:
   - Default
   - TransparentFX
