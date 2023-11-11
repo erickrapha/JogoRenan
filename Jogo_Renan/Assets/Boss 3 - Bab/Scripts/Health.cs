@@ -12,6 +12,9 @@ public class Health : MonoBehaviour
 
     public Animator anim; 
 
+    [SerializeField] private AudioSource hitSoundEffect;
+    [SerializeField] private AudioSource deathSoundEffect;
+
     void Awake()
     {
         nowLife = maxLife;
@@ -40,15 +43,23 @@ public class Health : MonoBehaviour
 
         if(nowLife <= 0)
         {
-            Destroy(gameObject);
+            deathSoundEffect.Play();
+            anim.SetTrigger("isDead");
+            Invoke("DestroyObject", 1f);
         }
 
+    }
+
+    void DestroyObject()
+    {
+        Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.CompareTag("Tiro"))
         {
+            hitSoundEffect.Play();
             TakeDamage(1);
         }
     }
