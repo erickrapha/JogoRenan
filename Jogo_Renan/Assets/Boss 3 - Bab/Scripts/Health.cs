@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
 
     public Text quant_vida;
 
-[Header("Componente")]
+    [Header("Componente")]
     public Animator anim; 
 
     [Header("AudioSource")]
@@ -23,7 +23,6 @@ public class Health : MonoBehaviour
         nowLife = maxLife;
     }
 
-    // Update is called once per frame
     void Update()
     {
         UpdateLive(nowLife);
@@ -48,14 +47,20 @@ public class Health : MonoBehaviour
         {
             deathSoundEffect.Play();
             anim.SetTrigger("isDead");
-            Invoke("DestroyObject", 1f);
+            Invoke("DestroyAndLoadNextScene", 2f);
         }
-
     }
 
-    void DestroyObject()
+    void DestroyAndLoadNextScene()
     {
+        hitSoundEffect.Stop();
         Destroy(gameObject);
+        CarregarProxFase();
+    }
+
+    void CarregarProxFase()
+    {
+        GameController.instance.CarregarProximaFase();
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -66,5 +71,4 @@ public class Health : MonoBehaviour
             TakeDamage(1);
         }
     }
-
 }
