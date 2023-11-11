@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
+    [Header("Life stuff")]
     public int maxLife;
     public int nowLife;
 
     public Text quant_vida;
 
+[Header("Componente")]
     public Animator anim; 
 
+    [Header("AudioSource")]
     [SerializeField] private AudioSource hitSoundEffect;
     [SerializeField] private AudioSource deathSoundEffect;
 
