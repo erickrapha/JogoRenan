@@ -12,11 +12,12 @@ public class StoneBugControl : MonoBehaviour
     private Animator anim;
     public Player playerScript;
     public Health HP;
+    public GameObject tiroGameObject;
+    public Transform firePoint;
+    [SerializeField] private AudioSource shootSoundEffect;
     
     [Header("Atributos")]
-    public int speed;
-    public GameObject tiroGameObject;
-    public Transform firePoint; 
+    public int speed; 
     public float shootTime;
     private float nowTime;
 
@@ -40,6 +41,7 @@ public class StoneBugControl : MonoBehaviour
     {
         MoveBug();
         ShootLogic();
+        Stop();
 
     }
 
@@ -49,6 +51,14 @@ public class StoneBugControl : MonoBehaviour
         Vector2 velocity = new Vector2(moveDirection * speed, rig.velocity.y);
         rig.velocity = velocity;
         anim.SetInteger("value",1);
+    }
+
+    public void Stop()
+    {
+        if (HP.nowLife == 0)
+        {
+            speed = 0;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -69,6 +79,7 @@ public class StoneBugControl : MonoBehaviour
 
     void Atirar()
     {
+        shootSoundEffect.Play();
         Tiro tiroScript = Instantiate(tiroGameObject, firePoint.position, Quaternion.identity).GetComponent<Tiro>();
         tiroScript.IniciarTiro(isLeft);
         
